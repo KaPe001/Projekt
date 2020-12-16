@@ -8,12 +8,11 @@ Feature: LogIn to an account
     And Then write your <address>
     And Then make up the <zipCode>
     And What <city> you live in
-    And What is your <country>
+    And What is your country
     And Can i have you <phone> number
-    And close the browser
+    Then confirm entered data
+    And delete the address
 
     Examples:
-      | alias |     address     | zipCode |   city   |    country     |    phone     |
-      | Ms.   |  Giełdowa 137   | 93-348  |   Lodz   | United Kingdom | 53 109 70 23 |
-      | Ms.   |  Zakątna 88     | 03-184  | Warszawa | United Kingdom | 69 547 79 93 |
-      | Ms.   |  Czereśniowa 65 | 31-410  | Krakow   | United Kingdom | 78 629 25 57 |
+      | alias |     address     | zipCode |   city   |    phone     |
+      | Ms.   |  Gieldowa 137   | 93-348  |   Lodz   | 53 109 70 23 |
