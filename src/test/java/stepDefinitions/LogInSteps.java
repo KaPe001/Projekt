@@ -10,10 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import pages.AddressPage;
 
 public class LogInSteps {
-    AddressPage addresspage;
     WebDriver driver;
 
     @Given("Open the website (.*)")
@@ -23,7 +21,7 @@ public class LogInSteps {
         //Open Google Chrome browser
         driver = new ChromeDriver();
 
-        //Maximize browesers window
+        //Maximize browser's window
         driver.manage().window().maximize();
 
         //Go to the website
