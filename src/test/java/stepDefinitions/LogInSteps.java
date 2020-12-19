@@ -92,7 +92,6 @@ public class LogInSteps {
     public void confirmData() {
         WebElement confirmButton = driver.findElement(By.className("btn-primary"));
         confirmButton.submit();
-        //driver.quit();
 
         try {
             Thread.sleep(2000);
@@ -102,7 +101,7 @@ public class LogInSteps {
     }
 
     @And("delete the address")
-    public void deleteAddress(){
+    public void deleteAddress() {
         WebElement deleteButton = driver.findElement(By.xpath("//span[contains(.,'Delete')]"));
         deleteButton.click();
 
